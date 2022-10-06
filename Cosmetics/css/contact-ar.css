@@ -1,0 +1,355 @@
+/*--------------MAIN STYLES FOR ALL PAGES---------*/
+
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+p {
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 18px;
+}
+/*-----------------------------------------------------------------------------*/
+/*----Contact Us Page Style----*/
+
+.contact-page {
+	width: 100%;
+	height: 100%;
+}
+
+.contact-first {
+	display: flex;
+	justify-content: center;
+	flex-wrap: wrap;
+	margin-bottom: 30px;
+}
+
+.first-div {
+	height: auto;
+	padding-top: 130px;
+	width: 100%;
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: space-evenly;
+	padding-bottom: 30px;
+	direction: rtl;
+}
+
+.light .first-div {
+	background-color: #f2f2f2;
+}
+
+.dark .first-div {
+	background-color: #1b1b1b;
+}
+
+.contact-info {
+	width: 35%;
+	margin-top: 70px;
+}
+
+.contact-header {
+	text-align: center;
+	font-size: 45pt;
+	font-family: 'Changa';
+	font-style: normal;
+	font-weight: 600;
+}
+
+.contact-para {
+	font-size: 25px;
+	font-family: 'Cairo';
+	font-style: normal;
+	font-weight: 400;
+
+}
+
+.light .contact-header,
+.light .contact-para,
+.light .location-header,
+.light .location-info {
+	color: black;
+}
+
+.dark .contact-header,
+.dark .contact-para,
+.dark .location-header,
+.dark .location-info {
+	color: white;
+}
+
+.contact-info2 {
+	background-image: url(../images/Capture1.webp);
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+	width: 500px;
+	height: 350px;
+}
+
+.contact-contain {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: space-evenly;
+	flex-wrap: wrap;
+	padding-bottom: 50px;
+	direction: rtl;
+}
+
+.first-card,
+.second-card {
+	width: 500px;
+	height: 500px;
+	box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.266);
+	border-radius: 10px;
+}
+
+.dark .first-card,
+.dark .second-card {
+	color: white;
+}
+
+.contact-icons {
+	width: 100px;
+	height: 100px;
+	padding-top: 50px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+.contact-cards-headers {
+	font-size: 24pt;
+	margin-top: 60px;
+	font-family: 'Changa';
+	font-style: normal;
+	font-weight: 600;
+	text-align: center;
+}
+
+.contact-cards-paragraph {
+	font-size: 15pt;
+	width: 90%;
+	text-align: center;
+	margin-top: 40px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: 'Cairo';
+	font-style: normal;
+	font-weight: 400;
+	
+}
+
+.phone-number {
+	margin-top: 50px;
+	text-align: center;
+	font-family: "Urbanist", sans-serif;
+	font-size: 20pt;
+	letter-spacing: 1.5px;
+}
+
+.support-link {
+	text-decoration: none;
+}
+
+.support-btn {
+	width: 150px;
+	padding: 20px;
+	margin-top: 50px;
+	background-color: rgb(207, 38, 138);
+	border: 1px solid rgb(207, 38, 138);
+	font-size: 20px;
+	font-family: "Kanit", sans-serif;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	text-decoration: none;
+	border-radius: 10px;
+	text-align: center;
+	color: white;
+}
+
+.support-btn:hover {
+	background-color: transparent;
+	color: rgb(207, 38, 138);
+	transition: 0.7s;
+}
+
+.location {
+	width: 100%;
+	height: auto;
+}
+
+.location-header {
+	color: black;
+	font-size: 30pt;
+	font-family: 'Changa';
+	font-style: normal;
+	font-weight: 600;
+	text-align: center;
+	padding-bottom: 20px;
+}
+
+.map-section {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	padding-bottom: 40px;
+}
+
+.location-info {
+	width: auto;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	text-align: center;
+	padding-top: 40px;
+}
+
+.map-header {
+	font-size: 25pt;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-family: 'Changa';
+	font-style: normal;
+	font-weight: 600;
+}
+.map-info {
+	font-size: 15pt;
+	margin-top: 10px;
+	margin-bottom: 15px;
+	font-family: 'Cairo';
+	font-style: normal;
+	font-weight: 400;
+	width: 80%;
+}
+
+/*-----MEDIA QUERY OF CONTACT PAGE----*/
+
+@media (max-width: 768px) {
+	.first-div {
+		height: 350px;
+	}
+	.contact-info {
+		width: 100%;
+	}
+
+	.contact-header {
+		color: black;
+		text-align: right;
+		margin-left: 20px;
+		padding-top: 20px;
+		font-size: 25pt;
+		font-family: 'Changa';
+	font-style: normal;
+	font-weight: 600;
+	}
+
+	.contact-para {
+		color: black;
+		font-size: 20px;
+		margin-left: 20px;
+		font-family: 'Cairo';
+	font-style: normal;
+	font-weight: 400;
+	}
+
+	.contact-info2 {
+		background-image: none;
+	}
+
+	.first-card {
+		margin-bottom: 40px;
+	}
+
+	.map-section {
+		width: 100%;
+		height: auto;
+		display: block;
+	}
+
+	.map {
+		width: 80%;
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.location-header{
+		font-family: 'Changa';
+	font-style: normal;
+	font-weight: 600;
+	direction: rtl;
+	font-size: 25px;
+	}
+
+	.map-header {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.map-info {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media only screen and (min-device-width: 1024px) and (max-device-width: 1366px) and (-webkit-min-device-pixel-ratio: 2) {
+	.contact-para {
+		color: black;
+		font-size: 25px;
+		margin-left: 20px;
+		font-family: 'Cairo';
+	font-style: normal;
+	font-weight: 400;
+	}
+
+	.map-section {
+		display: flex;
+		margin-left: auto;
+		margin-right: auto;
+	}
+}
+
+@media screen and (max-width: 375px) {
+	.first-card,
+	.second-card {
+		height: 550px;
+	}
+}
+
+@media screen and (max-width: 280px) {
+	.first-card,
+	.second-card {
+		height: 600px;
+	}
+}
+
+/*----End Of Contact Us Page Style----*/
+
+.dark {
+	background-color: #1b1b1b;
+	color: white !important;
+}

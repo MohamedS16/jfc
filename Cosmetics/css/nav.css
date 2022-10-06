@@ -1,0 +1,542 @@
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	background-color: rgb(207, 38, 138);
+	border-radius: 20px;
+  }
+
+/* Nabar Common Properties */
+
+.navbar {
+	display: flex;
+	justify-content: center;
+	width: 100%;
+	height: auto;
+}
+
+nav {
+	width: 100%;
+	height: 55px;
+	display: flex;
+	justify-content: center;
+	font-family: "Urbanist", sans-serif;
+	font-size: 17px;
+	z-index: 999;
+	position: fixed;
+}
+
+.nav-content {
+	height: auto;
+	width: 97%;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.img-logo {
+	width: auto;
+	height: 55px;
+	border-radius: 10px;
+}
+
+.main-links-list {
+	list-style: none;
+	display: flex;
+	margin-right: auto;
+	margin-left: auto;
+}
+
+.nav-link,
+.sub-link {
+	text-decoration: none;
+	padding: 7px;
+	margin: 2px;
+	position: relative;
+	cursor: pointer;
+	color: white;
+}
+
+.nav-link::after,
+.sub-link::after {
+	content: "";
+	position: absolute;
+	background: white;
+	width: 100%;
+	height: 5px;
+	left: 0;
+	bottom: 0;
+}
+
+.nav-links {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width: 100%;
+	margin-left: 50px;
+}
+
+.nav-hover::after {
+	transform: scale(0, 1);
+	transition: transform 0.5s ease;
+}
+
+.nav-hover:hover::after {
+	transform: scale(1, 1);
+}
+
+.toggler {
+	cursor: pointer;
+	display: none;
+}
+
+.toggler img {
+	width: 30px;
+	height: 30px;
+}
+
+.categories {
+	position: relative;
+}
+
+.dropdown-list {
+	position: absolute;
+	list-style: none;
+	width: 240px;
+	height: auto;
+	margin-top: 10px;
+	box-shadow: 1px 1px 10px rgba(0, 0, 0, 0.5);
+	text-align: center;
+	transition: all 0.7s;
+}
+
+.light .dropdown-list {
+	background-color: rgb(207, 38, 138);
+}
+
+.dark .dropdown-list {
+	background-color: black;
+}
+
+.hide {
+	display: none;
+}
+
+.dropdown-list li {
+	padding: 20px 30px;
+	width: auto;
+}
+
+.dropdown-list li {
+	border-bottom: 1px solid rgba(255, 255, 255, 0.527);
+}
+
+.down-arrow {
+	font-size: 15px;
+}
+
+/* Navbar starting and scroll */
+
+.navbar-default {
+	width: 80%;
+	border-radius: 20px;
+	margin-top: 40px;
+	transition: all 1s ease;
+}
+
+.navbar-scroll {
+	width: 100%;
+	border-radius: 0px;
+	top: 0%;
+}
+
+/* Navbar light and dark */
+
+.light .nav-light {
+	color: white;
+	background: rgb(207, 38, 138);
+}
+
+.dark .nav-light {
+	color: white;
+	background: black;
+}
+
+.light .nav-link {
+	color: white;
+}
+
+.dark .nav-link {
+	color: white;
+}
+
+/* Languages and dark mood btns */
+
+.lang {
+	font-size: 13px;
+	font-weight: bold;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	align-self: center;
+	width: auto;
+	min-width: 100px;
+}
+
+.flags img {
+	width: 35px;
+	height: 30px;
+	overflow: hidden;
+	margin: 0;
+	padding: 0%;
+	border-radius: 20px;
+}
+
+.flags {
+	height: 30px;
+	overflow: hidden;
+}
+
+.nav-menu {
+	display: flex;
+	align-items: center;
+	justify-content: space-around;
+	width: 80%;
+	height: 100%;
+}
+
+.settings {
+	display: flex;
+}
+
+.dark-mood-btn {
+	width: 100px;
+	height: 70px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+/* footer */
+
+.footer {
+	width: 100%;
+	height: auto;
+	font-family: "Urbanist", sans-serif;
+	z-index: 998 !important;
+	position: relative;
+	border-top-left-radius: 50px;
+}
+
+.footer-main {
+	width: 100%;
+	height: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.light .footer-light {
+	background-color: rgb(180, 33, 121);
+	color: white;
+}
+
+.dark .footer-light {
+	background-color: black;
+	color: white;
+}
+
+.footer-content {
+	width: 90%;
+	height: auto;
+	padding: 30px 0;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+}
+
+.footer-about,
+.footer-contact,
+.footer-working {
+	width: 350px;
+	height: 250px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: flex-start;
+	margin-top: 50px;
+}
+
+.about-logo {
+	width: auto;
+	height: 120px;
+	margin-bottom: 20px;
+	object-fit: cover;
+}
+
+.about-p {
+	width: 90%;
+	text-align: center;
+}
+
+.working-hours {
+	margin-bottom: 40px;
+	text-align: center;
+}
+
+.footer-contact h3,
+.footer-working h3 {
+	margin-bottom: 20px;
+	text-align: center;
+	font-size: 25px;
+	font-weight: 1000;
+	text-transform: uppercase;
+}
+
+.working-hours h4,
+.vacations h4 {
+	margin-bottom: 10px;
+	text-align: center;
+}
+
+.contact-logo {
+	width: 25px;
+	height: 25px;
+}
+
+.social {
+	display: flex;
+}
+
+.facebook-logo,
+.instagram-logo,
+.map-logo {
+	width: 25px;
+	height: 25px;
+	z-index: 2;
+}
+
+.work-logo,
+.vacation-logo {
+	width: 40px;
+	height: 40px;
+	margin: 0 10px 0 0;
+}
+
+.working-data {
+	text-align: center;
+}
+
+.info {
+	display: flex;
+	align-items: center;
+}
+
+.social-circle {
+	width: 50px;
+	height: 50px;
+	border-radius: 100%;
+	background-color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	margin: 0 5px;
+	position: relative;
+	outline: none;
+	border: none;
+	overflow: hidden;
+}
+
+.clip-circle {
+	width: 55px;
+	height: 55px;
+	border-radius: 100%;
+	position: absolute;
+	z-index: 1;
+	clip-path: circle(0px at 50% 50%);
+	outline: none;
+	border: none;
+	transition: all 0.5s ease-out;
+}
+
+.facebook {
+	background-color: blue;
+}
+
+.instagram {
+	background: linear-gradient(to bottom right, deeppink, purple);
+}
+
+.maps {
+	background: greenyellow;
+}
+
+.social-circle:hover .clip-circle {
+	clip-path: circle(60px at 50% 50%);
+	transition: all 0.7s ease-out;
+}
+
+.phone,
+.adress {
+	margin-bottom: 30px;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.phone p {
+	margin-left: 10px;
+}
+
+.adress {
+	text-align: center;
+	width: 70%;
+}
+
+.hr {
+	width: 100%;
+	height: 1px;
+	background-color: rgba(0, 0, 0, 0.363);
+}
+
+.dark .hr {
+	background-color: white;
+}
+.copyrights {
+	padding: 20px 0;
+	font-size: 15px;
+	text-align: center;
+}
+
+/* Dark and light button */
+
+.dark-mood-btn .fas {
+	font-size: 35px;
+	cursor: pointer;
+}
+
+.fa-sun {
+	background: -webkit-linear-gradient(yellow, rgb(255, 136, 0));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+}
+
+.fa-moon {
+	background: -webkit-linear-gradient(darkblue, dodgerblue);
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+	font-weight: 1000;
+}
+
+@media screen and (max-width: 920px) {
+	.navbar-default {
+		width: 100%;
+		border-radius: 0px;
+		margin-top: 0px;
+		position: fixed;
+	}
+
+	.navbar-scroll {
+		width: 100%;
+		border-radius: 0px;
+		position: fixed;
+		top: 0%;
+	}
+	.nav-content {
+		width: 100%;
+		align-items: unset;
+	}
+
+	.logo {
+		align-self: center;
+		margin-left: 20px;
+	}
+
+	.nav-links {
+		position: absolute;
+		height: 90vh;
+		width: 100%;
+		margin-top: 55px;
+		clip-path: circle(0px at 90% -10%);
+		-webkit-clip-path: circle(0px at 90% -10%);
+		transition: all ease-in 1s;
+		pointer-events: none;
+		flex-direction: column;
+		font-family: "Urbanist", sans-serif;
+		margin-left: 0;
+	}
+
+	.light .nav-links {
+		background-color: rgb(207, 38, 138);
+		color: white;
+	}
+
+	.dark .nav-links {
+		background-color: black;
+	}
+
+	.circle-toggle {
+		clip-path: circle(1500px at 90% -10%);
+		-webkit-clip-path: circle(1500px at 90% -10%);
+		transition: all ease-out 1s;
+		pointer-events: all;
+	}
+
+	.main-links-list {
+		flex-direction: column;
+		justify-content: space-evenly;
+		align-items: center;
+		height: 100%;
+		width: 100%;
+	}
+
+	.toggler {
+		display: block;
+		align-self: center;
+		margin-right: 30px;
+	}
+
+	.categories {
+		position: unset;
+	}
+
+	.dropdown-list {
+		position: unset;
+		width: auto;
+		margin-top: 0px;
+		box-shadow: 0px 0px 0px rgba(0, 0, 0, 0.5);
+	}
+
+	.dropdown-list li {
+		padding: 9px 0px;
+		width: auto;
+	}
+
+	.categories {
+		margin-top: 10px;
+	}
+	.dropdown-list li:nth-child(7) {
+		margin-bottom: 10px;
+	}
+	.settings {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 40px;
+	}
+
+	.dark-mood-btn .fas {
+		font-size: 50px;
+	}
+	.dark-mood-btn {
+		margin-bottom: 10px;
+	}
+}

@@ -1,0 +1,441 @@
+/*--------------MAIN STYLES FOR ALL PAGES---------*/
+
+* {
+	margin: 0%;
+	padding: 0%;
+	scroll-behavior: smooth;
+}
+
+
+
+/*-----------------------------------------------------------------------------*/
+
+.landing-img {
+	width: 100%;
+	height: 100vh;
+	position: absolute;
+	background-image: url(../Images/pexels-andrea-piacquadio-3760067.webp);
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-attachment: fixed;
+}
+
+.layer {
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	text-align: center;
+}
+
+.light .layer {
+	background-color: rgba(15, 26, 54, 0.6);
+}
+
+.dark .layer {
+	background-color: rgba(0, 0, 0, 0.6);
+}
+
+.landing-info {
+	margin-top: 100px;
+}
+
+.large-heading {
+	font-family: "Kanit", sans-serif;
+	font-weight: 500;
+	font-size: 45px;
+	letter-spacing: 5px;
+	color: white;
+}
+
+.small-heading {
+	font-family: "Urbanist", sans-serif;
+	font-weight: 400;
+	font-size: 24px;
+	padding-bottom: 50px;
+	line-height: 35px;
+	color: white;
+}
+
+.get-started {
+	text-decoration: none;
+	color: white;
+	font-size: 20px;
+	font-weight: 500;
+	font-family: "Urbanist", sans-serif;
+	border-radius: 5px;
+	letter-spacing: 1px;
+	padding: 13px;
+	text-transform: uppercase;
+	transition: 0.5s;
+
+}
+
+.light .get-started {
+	background-color: #0f1a36;
+	border: 2px solid #0f1a36;
+}
+
+.light .get-started:hover {
+	background-color: #2196f3;
+	border: 2px solid #2196f3;
+}
+
+.dark .get-started {
+	background-color: black;
+	border: 2px solid black;
+}
+
+.dark .get-started:hover {
+	background-color: #1b1b1b;
+	border: 2px solid black;
+}
+
+.about-section,
+.how-section,
+.recruit,
+.company {
+	width: 100%;
+	height: auto;
+}
+
+.how-section,
+.about-section {
+	padding: 20px 0 70px 0;
+}
+
+.recruit,
+.company {
+	padding: 20px 0;
+}
+
+.about-us,
+.how-it-work {
+	text-align: center;
+	font-size: 50px;
+	font-family: "Kanit", sans-serif;
+	font-weight: 500;
+	text-shadow: 1px 1px 3px black;
+	padding-bottom: 30px;
+	text-transform: uppercase;
+	letter-spacing: 5px;
+}
+
+.light .about-us,
+.light .how-it-work,
+.light .about-heading,
+.light .recruit-heading {
+	color: #0f1a36;
+	letter-spacing: 3px;
+	text-shadow: 1px 1px 3px black;
+}
+
+.dark .about-us,
+.dark .how-it-work,
+.dark .about-heading,
+.dark .recruit-heading {
+	color: white;
+}
+
+.about-info {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: auto;
+	flex-wrap: wrap;
+}
+
+.about1 {
+	width: auto;
+	max-width: 550px;
+	padding: 0 40px;
+	height: auto;
+}
+
+.about-heading {
+	font-size: 40px;
+	font-family: "Kanit", sans-serif;
+	font-weight: 400;
+	margin-bottom: 20px;
+	text-shadow: 1px 1px 1px black;
+	text-align: center;
+}
+
+.about-para {
+	font-size: 20px;
+	font-family: "Urbanist", sans-serif;
+	font-weight: 500;
+}
+
+.about-img {
+	width: 550px;
+	height: auto;
+	border-radius: 10px;
+	margin-top: 30px;
+	object-fit: cover ;
+}
+
+.dark .about-section {
+	background-color: #1b1b1b;
+	color: white !important;
+}
+
+.light .recruit {
+	background: linear-gradient(90deg,
+			rgba(232, 232, 234, 1) 40%,
+			rgba(125, 125, 125, 1) 100%);
+}
+
+.dark .recruit {
+	background: linear-gradient(90deg,
+			rgb(27, 27, 27) 50%,
+			rgba(125, 125, 125, 1) 100%);
+}
+
+.recruit-info {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	height: auto;
+	flex-wrap: wrap;
+}
+
+.recruit1 {
+	width: auto;
+	max-width: 550px;
+	padding: 0 30px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.recruit-heading {
+	font-size: 40px;
+	font-family: "Kanit", sans-serif;
+	font-weight: 400;
+	margin-bottom: 50px;
+	text-shadow: 1px 1px 1px black;
+	margin-top: 30px;
+}
+
+.recruit-para {
+	font-size: 24px;
+	font-family: "Urbanist", sans-serif;
+	font-weight: 500;
+	padding-bottom: 30px;
+	margin-bottom: 30px;
+}
+
+.recruit-img {
+	width: 550px;
+	height: 470px;
+	margin-top: 20px;
+}
+
+.know-more {
+	text-decoration: none;
+	font-size: 20px;
+	font-weight: 600;
+	border-radius: 10px;
+	font-family: "Urbanist", sans-serif;
+	letter-spacing: 1px;
+	padding: 15px 30px;
+	transition: 0.5s;
+}
+
+.light .know-more {
+	color: #fff;
+	background-color: #0f1a36;
+
+}
+
+.light .know-more:hover {
+	background-color: transparent;
+	color: #0f1a36;
+	border: 1px solid #0f1a36;
+	
+}
+
+.dark .know-more {
+	color: #fff;
+	background-color: black;
+}
+
+.dark .know-more:hover {
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+}
+
+.how-divs {
+	width: 100%;
+	display: flex;
+	justify-content: center;
+	height: auto;
+	flex-wrap: wrap;
+}
+
+.light .how-section {
+	background-color: white;
+}
+
+.dark .how-section {
+	background-color: #1b1b1b;
+}
+
+.how-cards {
+	width: 280px;
+	height: auto;
+	padding: 30px 40px;
+	border-radius: 10px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+}
+
+.light .how-cards:hover {
+	background-color: #0f1a36;
+	color: white;
+}
+
+.dark .how-cards:hover {
+	background-color: white;
+	color: black;
+}
+
+.category-link {
+	text-decoration: none;
+	color: #2196f3;
+	font-weight: 1000;
+}
+
+.phone {
+	width: 90px;
+	height: 90px;
+}
+
+.how-steps {
+	font-family: "Urbanist", sans-serif;
+	font-size: 22px;
+	margin-top: 20px;
+	text-align: center;
+	font-weight: 600;
+}
+
+.light .company {
+	background: linear-gradient(90deg,
+			rgba(232, 232, 234, 1) 40%,
+			rgba(125, 125, 125, 1) 100%);
+}
+
+.dark .company {
+	background: linear-gradient(90deg, rgb(27, 27, 27) 50%, rgb(32, 31, 31) 100%);
+}
+
+.companies {
+	width: 250px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	margin-bottom: 20px;
+	opacity: 0.4;
+}
+
+.companies:hover {
+	opacity: 1;
+	background: rgba(255, 255, 255, 0.993);
+}
+
+.companies-divs {
+	display: flex;
+	justify-content: center;
+	height: auto;
+	flex-wrap: wrap;
+}
+
+.companies-steps {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	font-family: "Urbanist", sans-serif;
+	font-weight: 600;
+	letter-spacing: 1px;
+	text-align: center;
+	padding-bottom: 50px;
+	font-size: 28px;
+}
+
+.companies-cards {
+	padding: 10px;
+	width: 280px;
+}
+
+/*-----MEDIA QUERY CSS----*/
+@media (max-width: 768px) {
+	.landing-info {
+		width: 80%;
+	}
+
+	.large-heading {
+		font-size: 35px;
+	}
+
+	.small-heading {
+		font-size: 22px;
+		text-align: center;
+	}
+
+	.about1 {
+		width: 90%;
+	}
+
+	.about-img {
+		width: 250px;
+		height: 300px;
+	}
+
+	.recruit {
+		background: rgb(232, 232, 234);
+		background: linear-gradient(90deg,
+				rgba(232, 232, 234, 1) 40%,
+				rgba(125, 125, 125, 1) 100%);
+		min-height: 750px;
+		height: auto;
+		width: 100%;
+	}
+
+	.how-it-work {
+		text-align: center;
+		font-size: 40px;
+		margin-bottom: 0%;
+	}
+
+	.recruit1 {
+		width: 90%;
+		position: absolute;
+		z-index: 100;
+	}
+
+	.recruit2 {
+		position: relative;
+		top: 80px;
+	}
+
+	.recruit-img {
+		display: none
+	}
+}
+
+.dark {
+	color: white;
+}
+
+.light {
+	color: #0f1a36;
+}

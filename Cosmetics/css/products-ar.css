@@ -1,0 +1,407 @@
+* {
+	margin: 0%;
+	padding: 0%;
+	box-sizing: border-box;
+	scroll-behavior: smooth;
+}
+
+.pagee {
+	display: flex;
+	flex-direction: row;
+	overflow-x: hidden;
+}
+
+.dark {
+	background-color: #1b1b1b;
+}
+
+.side-content {
+	width: 300px;
+	height: 100vh;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	overflow-y: auto;
+	overflow-x: hidden;
+	position: fixed;
+	margin-top: 60px;
+}
+
+.hide {
+	display: none;
+}
+
+.side-title {
+	margin-top: 10px;
+	font-size: 28px;
+	padding: 15px 20px;
+	text-transform: uppercase;
+	border-radius: 10px;
+	font-family: 'Changa';
+	font-style: normal;
+	font-weight: 600;
+}
+
+.light .side-title {
+	background-color: black;
+	color: white;
+}
+
+.dark .side-title {
+	background-color: white;
+	color: black;
+}
+
+.side-list {
+	padding-top: 10px;
+}
+
+.side-list ul {
+	padding-left: 15px;
+	list-style: square;
+}
+
+.side-list ul li {
+	padding: 22px 0;
+	border-bottom: 1px solid rgba(117, 116, 116, 0.534);
+}
+
+.side-list ul li a {
+	text-decoration: none;
+	font-size: 18px;
+	color: black;
+	text-transform: uppercase;
+	font-family: 'Kanit' , sans-serif;
+}
+
+.dark .side-content,
+.dark .side-list ul li a {
+	color: white;
+}
+
+.allproducts {
+	height: auto;
+	width: auto;
+	min-width: 75%;
+	max-width: 92%;
+	display: flex;
+	justify-content: flex-end;
+}
+
+.lspace {
+	width: 75%;
+	margin-left: auto;
+}
+
+.nspace {
+	width: 90%;
+	margin-left: auto;
+	margin-right: auto;
+	padding-left: 40px;
+}
+
+.firstsec,
+.secondsec,
+.thirdsec,
+.fourthsec,
+.fifthsec,
+.sixthsec,
+.seventhsec,
+.ayhaga {
+	width: 100%;
+	height: auto;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	padding: 75px 0 25px 0;
+}
+
+.sec-title {
+	font-size: 65px;
+	text-align: center;
+	height: 250px;
+	margin: 20px 0;
+	width: 95%;
+	color: white;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	letter-spacing: 5px;
+	text-transform: uppercase;
+	text-shadow: 5px 5px 20px black;
+	border-radius: 10px;
+}
+
+.ayhaga .sec-title,
+.fourthsec .sec-title,
+.secondsec .sec-title,
+.seventhsec .sec-title,
+.sixthsec .sec-title,
+.thirdsec .sec-title,
+.fifthsec .sec-title {
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+}
+
+.ayhaga .sec-title {
+	background-image: url(../images/LIPSTCKS/ZUREOLIPSTCK/IMG_4617.webp);
+}
+
+.ayhaga {
+	padding: 40px 0 25px 0;
+}
+.fourthsec .sec-title {
+	background-image: url(../images/FaceMasks/802D2228-9FA5-434C-8F17-AC0AD25A31B0-9502DFB0-2042-4040-8D2D-C4DB7344A174.webp);
+}
+
+.secondsec .sec-title {
+	background-image: url(../images/EyeShadowPallet/240933359_4343157932388153_3839941507796790617_n.webp);
+}
+
+.fifthsec .sec-title {
+	background-image: url(../images/LipTint/IMG_5054.webp);
+}
+
+.thirdsec .sec-title {
+	background-image: url(../images/Eyebrows/IMG_4918.webp);
+}
+
+.seventhsec .sec-title {
+	background-image: url(../images/Ginseng/GINSENGBALLS/IMG_6100.webp);
+}
+
+.sixthsec .sec-title {
+	background-image: url(../images/LIPSTCKS/ZUREOLIPSTCK/IMG_4917.webp);
+}
+
+.cards {
+	width: 100%;
+	height: auto;
+	display: flex;
+	align-items: flex-start;
+	justify-content: center;
+	flex-wrap: wrap;
+}
+
+.card {
+	margin: 10px;
+	height: auto;
+	width: 270px;
+	box-shadow: 1px 1px 5px rgba(128, 128, 128, 0.266);
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding-bottom: 12px;
+	border-radius: 10px;
+}
+
+.light .card {
+	color: black;
+}
+
+.dark .card {
+	color: white;
+}
+
+.prod-img {
+	width: 250px;
+	height: 200px;
+	margin: 10px;
+	object-fit: cover;
+
+	border-radius: 10px;
+}
+
+.prod-title {
+	text-align: center;
+	font-size: 22px;
+	width: 95%;
+}
+
+.prod-desc {
+	font-size: 16px;
+	text-align: center;
+	width: 90%;
+	direction: rtl;
+	font-family: 'Cairo';
+	font-style: normal;
+	font-weight: 400;
+}
+
+.prod-desc p {
+	margin: 10px 0;
+}
+
+.prod-price {
+	font-size: 25px;
+	margin: 5px 0 15px;
+	direction: rtl;
+	font-family: 'Cairo';
+	font-style: normal;
+	font-weight: 600;
+}
+
+.buy-now {
+	background-color: rgb(207, 38, 138);
+	text-decoration: none;
+	font-size: 20px;
+	color: white;
+	padding: 15px 40px;
+	border: 1px solid rgb(207, 38, 138);
+	border-radius: 10px;
+	font-family: 'Cairo';
+	font-style: normal;
+	font-weight: 600;
+}
+
+.buy-now:hover {
+	background-color: transparent;
+	color: rgb(207, 38, 138);
+	transition: 0.7s;
+}
+
+.fas {
+	cursor: pointer;
+}
+
+.fa-angle-double-left {
+	align-self: flex-end;
+	margin-right: 20px;
+	margin-top: 15px;
+	font-size: 40px;
+}
+
+.fa-angle-double-right {
+	margin-left: 10px;
+	margin-top: 90px;
+	position: fixed;
+	font-size: 60px;
+}
+
+.light .pagee .fas {
+	color: black;
+}
+
+.dark .pagee .fas {
+	color: white;
+}
+
+.keep {
+	text-align: center;
+	font-size: 35px;
+	padding: 30px 0;
+}
+
+.secondsec .cards .card:nth-child(1) .prod-desc {
+	margin-top: 10px;
+}
+
+.fourthsec .prod-desc {
+	min-height: 90px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.sixthsec .prod-desc {
+	height: 200px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.sixthsec .cards .card:nth-child(1) .prod-desc {
+	display: block;
+}
+
+.fourthsec .prod-title {
+	height: 50px;
+}
+
+.downn,
+.downnn,
+.downnnn {
+	font-size: 18px;
+	position: absolute;
+	margin-left: 3px;
+}
+
+.show-ing {
+	padding-bottom: 17px;
+}
+
+.show-ing,
+.show-ingg,
+.show-inggg {
+	font-weight: 600;
+	position: relative;
+	cursor: pointer;
+}
+
+.fifthsec .prod-desc {
+	height: 180px;
+}
+
+.seventhsec .cards .card:nth-child(1) .prod-desc {
+	padding: 23px 0;
+}
+
+.fifthsec .cards .card:nth-child(2) .prod-desc,
+.seventhsec .cards .card:nth-child(1) .prod-desc {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+
+
+h1,
+h2,
+h3,
+h4 {
+	font-family: "Kanit", sans-serif;
+}
+
+@media screen and (max-width: 1100px) {
+	.side-content {
+		width: 250px;
+	}
+}
+
+@media screen and (max-width: 920px) {
+	.sidebar {
+		display: none;
+	}
+
+	.lspace {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+	}
+
+	.nspace {
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
+		padding-left: 0px;
+	}
+}
+
+@media screen and (max-width: 414px) {
+	.sec-title {
+		font-size: 45px;
+	}
+}
+
+@media screen and (max-width: 280px) {
+	.sec-title {
+		font-size: 35px;
+	}
+}
+
+footer {
+	z-index: 10;
+}

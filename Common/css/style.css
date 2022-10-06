@@ -1,0 +1,314 @@
+/*--------------MAIN STYLES FOR ALL PAGES---------*/
+
+* {
+	margin: 0%;
+	padding: 0%;
+}
+
+p {
+	font-size: 16px;
+}
+
+h1 {
+	font-size: 48px;
+}
+
+h2 {
+	font-size: 36px;
+}
+
+h3 {
+	font-size: 28px;
+}
+
+h4 {
+	font-size: 18px;
+}
+
+::-webkit-scrollbar {
+	width: 10px;
+	background: transparent;
+  }
+  
+  ::-webkit-scrollbar-thumb {
+	background-color: #160064;
+	border-radius: 20px;
+  }
+
+/*-----------------------------------------------------------------------------*/
+
+/*----Start Of Landing Page Style----*/
+
+body {
+	overflow-x: hidden;
+}
+
+
+.landing-page {
+	width: 100%;
+	height: 100vh;
+	min-height: 100vh;
+	position: absolute;
+}
+
+.layer {
+	min-height: 100vh;
+	position: relative;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.slider {
+	background-image: url(../images/bg.svg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+	position: absolute;
+	height: 100%;
+	width: 100%;
+	top: 0;
+	left: 0;
+	z-index: -1;
+}
+
+@media screen and (max-width:1050px) {
+	.slider {
+		background-color: rgb(171, 226, 43);
+		padding: 50px 0;
+	}
+
+
+	.landing-page {
+		width: 100%;
+		height: auto;
+		min-height: 100vh;
+		position: absolute;
+	}
+}
+
+.contain2 {
+	width: 100%;
+	height: 100%;
+	display: flex;
+	justify-content: space-evenly;
+	align-items: center;
+	flex-wrap: wrap;
+	border-radius: 20px;
+	padding: 30px 0px 0px;
+	background-color: #160064;
+}
+
+.logo{
+	width: 200px;
+	height: auto;
+}
+
+.card1,
+.card2 {
+	height: auto;
+	width: 400px;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	justify-content: center;
+	padding-bottom: 30px;
+	position: relative;
+	border-radius: 20px;
+	/* margin: 0px 50px; */
+}
+
+.bllur {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	backdrop-filter: blur(5px);
+	padding-bottom: 30px;
+	border-radius: 20px;
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.25);
+}
+
+.cosmetics-image {
+	width: 150px;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	height: 150px;
+	object-fit: cover;
+}
+
+.cosmetics-header {
+	text-align: center;
+	color: white;
+	text-shadow: 0 0 10px #000000;
+	font-family: "Urbanist", sans-serif;
+	letter-spacing: 2px;
+	font-size: 30px !important;
+	min-height: 75px;
+	width: 90%;
+}
+
+.cosmetics-paragraph {
+	font-size: 24px;
+	text-align: center;
+	font-family: "Urbanist", sans-serif;
+	color: white;
+	font-weight: 900;
+	height: auto;
+	min-height: 60px;
+	width: 80%;
+}
+
+.card-image1,
+.card-image2 {
+	z-index: 2;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	height: auto;
+	width: 100%;
+	padding: 0 20px;
+}
+
+
+
+.kntwo {
+	background-color: #cf268a;
+	border: 1px solid #cf268a;
+}
+
+.knone {
+	background-color: #068a85;
+	border: 1px solid #068a85;
+}
+
+.know-more {
+	padding: 15px 30px;
+	margin-top: 20px;
+	font-size: 20px;
+	cursor: pointer;
+	font-family: "Kanit", sans-serif;
+	border-radius: 10px;
+	text-decoration: none;
+	color: white;
+
+}
+
+.knone:hover {
+	background-color: transparent;
+	transition: 0.5s;
+	color: #068a85;
+}
+
+.kntwo:hover {
+	background-color: transparent;
+	color: #cf268a;
+	transition: 0.5s;
+}
+
+
+
+/*first section */
+
+.anim {
+	height: 100vh;
+	width: 100%;
+	background-color: black;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	overflow: hidden;
+}
+
+.logg {
+	color: white;
+	font-size: 60px;
+	font-weight: 1000;
+	overflow: hidden;
+	position: relative;
+}
+
+.log {
+	height: auto;
+	text-align: center;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+}
+
+.chose {
+	text-decoration: none;
+	font-size: 22px;
+	color: white;
+	background: dodgerblue;
+	padding: 15px 30px;
+	border-radius: 10px;
+	font-family: 'kanit';
+	animation: momo 5s linear;
+	border: 1px solid dodgerblue;
+}
+
+
+.chose:hover {
+	color: dodgerblue;
+	background: transparent;
+}
+
+/* nav*/
+
+.nnaavv {
+	width: 100%;
+	height: 50px;
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	margin: 20px 0;
+	padding-left: 20px;
+}
+
+.landing-logo {
+	margin-left: 20px;
+	font-size: 20px;
+}
+
+.langs {
+	width: auto;
+	height: 40px;
+	margin-right: 40px;
+	display: flex;
+	backdrop-filter: blur(20px);
+	padding: 10px 20px;
+	border-radius: 5px;
+	box-shadow: inset 0 0 2000px rgba(255, 255, 255, 0.25);
+}
+
+.langs a img{
+	height: 45px;
+	width: auto;
+	margin: 0 5px;
+}
+
+
+
+@media screen and (max-width:1050px) {
+	.contain2 {
+		/* background: rgb(194, 14, 14); */
+		padding: 60px 20px 30px;
+	}
+
+	.card2 {
+		margin-left: 5px;
+	}
+}
+
+@media screen and (max-width:1023px) {
+	.card2 {
+		margin-top: 40px;
+	}
+}
+
